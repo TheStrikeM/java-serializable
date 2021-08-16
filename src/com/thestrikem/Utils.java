@@ -10,7 +10,7 @@ public class Utils {
         objectOutputStream.close();
     }
 
-    public static Object unSerializableClass(String name) throws Exception {
+    public static Object deSerializableClass(String name) throws Exception {
         FileInputStream fileInputStream = new FileInputStream(name);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         Object newObject = objectInputStream.readObject();
